@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function rango() {
+            let menor = parseInt(prompt("Ingrese el número menor:"));
+            let mayor = parseInt(prompt("Ingrese el número mayor:"));
+            if (menor >= mayor) {
+                document.write("El primer número debe ser menor que el segundo.");
+            } else {
+                document.write("Números desde " + menor + " hasta " + mayor + ": <br>");
+                for (let f = menor; f <= mayor; f++) {
+                    document.write(f + "<br>");
+                }
+            }
+        }
+        rango();
+        </script>
+    </body>
+</html>

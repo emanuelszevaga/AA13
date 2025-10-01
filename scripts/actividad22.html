@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let contador = 1;
+            let mayoresoiguales = 0; 
+            let menores = 0;
+            while (contador <= 10) {
+                let nota = parseInt(prompt("Ingrese la nota del alumno " + contador + ":"));
+                if (nota >= 7) {
+                    mayoresoiguales++;
+                } else {
+                    menores++;
+                }
+                contador++;
+            }
+            document.write("Cantidad de alumnos con notas mayores o iguales a 7: " + mayoresoiguales + "<br>");
+            document.write("Cantidad de alumnos con notas menores a 7: " + menores + "<br>");
+        </script>
+    </body>
+</html>
