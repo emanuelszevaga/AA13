@@ -1,0 +1,25 @@
+<!--EJERCICIO CONTROLES FORM, BUTTON Y TEXT
+Consigna: elaborar un programa que permita cargar un entero en un text y al presionar un botón nos muestre dicho valor 
+elevado al cubo (emplear la función alert)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label>Ingrese un número:</label>
+            <input type="text" id="numero">
+            <input type="button" value="Calcular cubo" onclick="mostrarCubo()">
+        </form>
+        <script type="text/javascript">
+            function mostrarCubo() {
+            let valor = document.getElementById("numero").value; 
+            let numero = parseInt(valor);
+            let cubo = numero * numero * numero; 
+            alert("El número elevado al cubo es: " + cubo);
+            }
+        </script>
+    </body>
+</html>

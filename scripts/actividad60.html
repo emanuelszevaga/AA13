@@ -1,0 +1,21 @@
+<!--EJERCICIO FORMULARIOS Y EVENTOS
+Consigna: elaborar un formulario con tres botones y las leyendas "1", "2" y "3". Mostrar un mensaje indicando que boton se presionó-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <input type="button" value="1" onclick="mostrarMensaje(1)">
+            <input type="button" value="2" onclick="mostrarMensaje(2)">
+            <input type="button" value="3" onclick="mostrarMensaje(3)">
+        </form>
+        <script type="text/javascript">
+            function mostrarMensaje(numero) {
+                alert("Se presionó el botón " + numero);
+            }
+        </script>
+    </body>
+</html>

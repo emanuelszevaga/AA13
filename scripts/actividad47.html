@@ -1,0 +1,24 @@
+<!--EJERCICIO CLASE DATE
+Consigna: elaborar un programa que muestre en que cuatrimestre del año nos encontramos.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let fecha = new Date();
+            let mes = fecha.getMonth() + 1;
+            let cuatrimestre;
+            if (mes >= 1 && mes <= 4) {
+            cuatrimestre = 1;
+            } else if (mes >= 5 && mes <= 8) {
+            cuatrimestre = 2;
+            } else {
+            cuatrimestre = 3;
+            }
+            document.write("Estamos en el " + cuatrimestre + "° cuatrimestre del año.");
+        </script>
+    </body>
+</html>

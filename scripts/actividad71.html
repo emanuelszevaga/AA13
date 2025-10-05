@@ -1,0 +1,42 @@
+<!--EJERCICIO CONTROL TEXTAREA
+Consigna: confeccionar una página de visitas a un sitio, solicitar ingresar el nombre de una persona, su mail y los comentarios (TEXTAREA)
+Mostrar luego llamando a la funcion alert los datos ingresados.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label>Nombre:</label><br>
+            <input type="text" id="nombre"><br><br>
+            <label>Apellido:</label><br>
+            <input type="text" id="apellido"><br><br>
+            <label>Correo electrónico:</label><br>
+            <input type="email" id="correo"><br><br>
+            <label>Comentarios:</label><br>
+            <textarea id="comentarios" rows="5" cols="40"></textarea><br><br>
+            <button type="button" onclick="mostrarDatos()">Enviar</button>
+        </form>
+        <script type="text/javascript">
+            function mostrarDatos() {
+                const nombre = document.getElementById("nombre").value;
+                const apellido = document.getElementById("apellido").value;
+                const correo = document.getElementById("correo").value;
+                const comentarios = document.getElementById("comentarios").value;
+                if (nombre == "" || correo == "" || comentarios == "") {
+                    alert("Todos los campos deben estar completos.");
+                } else {
+                    alert(
+                    "Datos ingresados:\n" +
+                    "Nombre: " + nombre + "\n" +
+                    "Apellido: " + apellido + "\n" +
+                    "Correo: " + correo + "\n" +
+                    "Comentarios: " + comentarios
+                    );
+                }
+            }
+        </script>
+    </body>
+</html>

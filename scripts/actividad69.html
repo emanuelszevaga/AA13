@@ -1,0 +1,29 @@
+<!--EJERCICIO CONTROL CHECKBOX
+Consigna: confeccionar una página que muestre 3 checkbox que permitan seleccionar los deportes que practica el usuario. Mostrar
+al presionar un botón los deportes que eligió-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <label><input type="checkbox" id="futbol"> Fútbol</label><br>
+        <label><input type="checkbox" id="basquet"> Basquet</label><br>
+        <label><input type="checkbox" id="tenis"> Tenis</label><br><br>
+        <button onclick="deportes()">Mostrar seleccionados</button>
+        <script type="text/javascript">
+            function deportes() {
+            let deportes = [];
+            if (document.getElementById("futbol").checked) deportes.push("Fútbol");
+            if (document.getElementById("basquet").checked) deportes.push("Basquet");
+            if (document.getElementById("tenis").checked) deportes.push("Tenis");
+            if (deportes.length > 0) {
+                alert("Elegiste: " + deportes.join(", "));
+            } else {
+                alert("No seleccionaste ningún deporte");
+            }
+        }
+        </script>
+    </body>
+</html>

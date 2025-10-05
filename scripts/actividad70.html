@@ -1,0 +1,30 @@
+<!--EJERCICIO CONTROL RADIO
+Consigna: confeccionar una página que muestre ddos objetos de la clase radio solicitando que muestre si es mayor a 18 años o no.
+Al presionar un boton mostrar un alert indicando si puede ingresar al sitio o no-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Seleccione una opción</h2>
+        <label><input type="radio" name="edad" value="mayor"> Soy mayor de 18 años</label><br>
+        <label><input type="radio" name="edad" value="menor"> Soy menor de 18 años</label><br><br>
+        <button onclick="verificarEdad()">Verificar</button>
+        <script type="text/javascript">
+            function verificarEdad() {
+            const edad = document.querySelector('input[name="edad"]:checked');
+            if (!edad) {
+                alert("Por favor seleccioná una opción");
+                return;
+            }
+            if (edad.value === "mayor") {
+                alert("Acceso correcto. Podés ingresar al sitio");
+            } else {
+                alert("Acceso denegado. No podés ingresar al sitio");
+            }
+        }
+        </script>
+    </body>
+</html>

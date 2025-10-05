@@ -1,0 +1,23 @@
+<!--EJERCICIO CLASE STRING
+Consigna: elaborar un programa que solicite el ingreso de un nomres por teclado hasta que se ingrese la palabra fin y mostrar cuantos
+nombres se ingresaron-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            function nombres() {
+            let num = 0;
+            let nombre = prompt("Ingrese un nombre o 'Fin' para terminar");
+            while (nombre != "Fin") {
+                num++;
+                nombre = prompt("Ingrese un nombre o 'Fin' para terminar");
+            }
+            document.write("Se ingresaron " + num + " nombres");
+        }
+        </script>
+    </body>
+</html>

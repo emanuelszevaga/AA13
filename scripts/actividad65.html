@@ -1,0 +1,38 @@
+<!--EJERCICIO CONTROL SEELCT
+Consigna: armar un programa que muestre un objeto select con distintos tipos de pizzas. Al seleccionar una mostrar un objeto
+de tipo text con el precio-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label>Tipo de pizza:</label>
+            <select id="pizza" onchange="mostrarPrecio()">
+            <option value="">-- Seleccione --</option>
+            <option value="jyq">Jamón y Queso</option>
+            <option value="muzza">Muzzarella</option>
+            <option value="morrones">Morrones</option>
+            </select>
+            <br><br>
+            <label>Precio:</label>
+            <input type="text" id="precio" readonly>
+        </form>
+        <script type="text/javascript">
+            function mostrarPrecio() {
+            let seleccion = document.getElementById("pizza").value;
+            let precio = "";
+            if (seleccion == "jyq") {
+                precio = "$7580";
+            } else if (seleccion == "muzza") {
+                precio = "$7130";
+            } else if (seleccion == "morrones") {
+                precio = "$6000";
+            }
+            document.getElementById("precio").value = precio;
+        }
+        </script>
+    </body>
+</html>

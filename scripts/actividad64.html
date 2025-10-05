@@ -1,0 +1,29 @@
+<!--EJERCICIO CONTROL PASSWORD
+Consigna: disponer de dos campos de texto tipo password cuando se presiona un boton mostrar si las dos claves ingresadas son iguales o no-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label>Ingrese su contraseña:</label><br>
+            <input type="password" id="clave1"><br><br>
+            <label>Vuelva a ingresar su contraseña:</label><br>
+            <input type="password" id="clave2"><br><br>
+            <input type="button" value="Verificar" onclick="verificarClaves()">
+        </form>
+        <script type="text/javascript">
+            function verificarClaves() {
+            let clave1 = document.getElementById("clave1").value;
+            let clave2 = document.getElementById("clave2").value;
+            if (clave1 == clave2) {
+                alert("Las contraseñas coinciden");
+            } else {
+                alert("Las contraseñas no coinciden");
+            }
+        }
+        </script>
+    </body>
+</html>
