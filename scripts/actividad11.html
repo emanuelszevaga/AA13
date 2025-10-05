@@ -1,0 +1,22 @@
+<!--EJERCICIO CONDICIONALES COMPUESTAS
+Consigna: se ingresa por teclado un número positivo de uno o dos dígitos, mostrar un mensaje indicando si el número tiene 
+uno o dos dígitos -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let numero = parseInt(prompt("Ingrese un número positivo de 1 o 2 dígitos:"));
+            if (numero >= 0 && numero <= 9) {
+                document.write("El número tiene 1 dígito");
+            } else if (numero >= 10 && numero <= 99) {
+                document.write("El número tiene 2 dígitos");
+            } else {
+                document.write("El número ingresado no es válido (si o si tiene que ser de 1 o 2 dígitos positivos)");
+            }
+        </script>
+    </body>
+</html>

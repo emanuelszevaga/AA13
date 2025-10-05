@@ -1,0 +1,23 @@
+<!--EJERCICIO ESTRUCTURAS CONDICIONALES ANIDADAS
+Consigna: realizar un programa que pida ingresar 3 valores por teclado, si todos son iguales se permite la suma del primero 
+con el segundo y ese resultado se multiplica por el tercero -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let a = parseInt(prompt("Ingrese el primer número:"));
+            let b = parseInt(prompt("Ingrese el segundo número:"));
+            let c = parseInt(prompt("Ingrese el tercer número:"));
+            if (a == b && b == c) {
+                let resultado = (a + b) * c;
+                document.write("Resultado: " + resultado);
+            } else {
+                document.write("No todos los números son iguales.");
+            }
+        </script>
+    </body>
+</html>

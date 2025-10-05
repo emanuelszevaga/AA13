@@ -1,3 +1,6 @@
+<!--EJERCICIO ESTRUCTURAS SWITCH
+Consigna: realizar un programa que solicite el ingreso e alguna de estas palabras (casa, mesa, perro, gato) luego mostrar la palabra
+traducida en inglés. -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,7 +9,25 @@
     </head>
     <body>
         <script type="text/javascript">
-            
+            let palabra = prompt("Ingrese una palabra (casa, mesa, perro, gato):");
+            let traduccion;
+            switch (palabra.toLowerCase()) {
+            case "casa":
+                traduccion = "house";
+                break;
+            case "mesa":
+                traduccion = "table";
+                break;
+            case "perro":
+                traduccion = "dog";
+                break;
+            case "gato":
+                traduccion = "cat";
+                break;
+            default:
+                traduccion = "Palabra incorrecta, volvé a intentar.";
+            }
+            document.write("Traducción: " + traduccion);
         </script>
     </body>
 </html>

@@ -1,0 +1,27 @@
+<!--EJERCICIO ESTRUCTURAS CONDICIONALES ANIDADAS
+Consigna: realizar un programa que pida ingresar la coordenada de un punto en el plano, dos valores enteros x e y.
+Posteriormente imprimir por pantalla en que cuadrante se ubica dicho punto (1er cuadrante si x > 0 Y y > 0, 2do si x < 0 Y y > 0)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let x = parseInt(prompt("Ingrese la coordenada del eje X:"));
+            let y = parseInt(prompt("Ingrese la coordenada del eje Y:"));
+            if (x > 0 && y > 0) {
+                document.write("El punto se encuentra en el 1° Cuadrante");
+            } else if (x < 0 && y > 0) {
+                document.write("El punto se encuentra en el 2° Cuadrante");
+            } else if (x < 0 && y < 0) {
+                document.write("El punto se encuentra en el 3° Cuadrante");
+            } else if (x > 0 && y < 0) {
+                document.write("El punto se encuentra en el 4° Cuadrante");
+            } else {
+                document.write("El punto no está en ningún cuadrante (está en un eje o en el origen.");
+            }
+        </script>
+    </body>
+</html>

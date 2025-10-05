@@ -1,3 +1,5 @@
+<!--EJERCICIO ESTRUCTURAS WHILE
+Consigna: realizar un programa que imprima 25 términos de la serie 11-22-33-44, etc (no se ingresan valores por teclado). -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,7 +8,13 @@
     </head>
     <body>
         <script type="text/javascript">
-            
+            let contador = 1;
+            let numero = 11;
+            while (contador <= 25) {
+            document.write(numero + " - ");
+            contador++;
+            numero += 11;
+            }
         </script>
     </body>
 </html>

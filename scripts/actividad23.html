@@ -1,0 +1,22 @@
+<!--EJERCICIO CONCEPTO DE ACUMULADOR
+Consigna: realizar un programa que lea 5 alturas y muestre el promedio de las personas -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let contador = 1;
+            let suma = 0;
+            while (contador <= 5) {
+            let altura = parseFloat(prompt("Ingrese la altura de la persona " + contador + " (en metros):"));
+            suma = suma + altura;  //acumulador
+            contador++;
+            }
+            let promedio = suma / 5;
+            document.write("El promedio de las alturas es: " + promedio + " metros");
+        </script>
+    </body>
+</html>

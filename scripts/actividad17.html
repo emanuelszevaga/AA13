@@ -1,0 +1,24 @@
+<!--EJERCICIO ESTRUCTURAS CONDICIONALES ANIDADAS
+Consigna: realizar un programa que lea los datos de entrada e informe a) si el sueldo es inferior a 500 pero su antiguedad 
+igual o superior a 10 años otorgarle un aumento del 20% mostrar el sueldo a pagar. b) si el sueldo es inferior a 500 pero su antiguedad 
+menor a 10 años darle un aumento del 5%. c) si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios  -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let sueldo = parseFloat(prompt("Ingrese el sueldo:"));
+            let antiguedad = parseInt(prompt("Ingrese los años de antigüedad:"));
+            let sueldoFinal = sueldo;
+            if (sueldo < 500 && antiguedad >= 10) {
+                sueldoFinal = sueldo * 1.20; 
+            } else if (sueldo < 500 && antiguedad < 10) {
+                sueldoFinal = sueldo * 1.05;
+            }
+            document.write("El sueldo a pagar es: " + sueldoFinal);
+        </script>
+    </body>
+</html>
