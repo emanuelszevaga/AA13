@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio: Propiedad location</title>
+</head> 
+<body>
+    <button onClick="abrirCorreo()">Redireccionar a un servidor de mail</button>
+    <script>
+        function abrirCorreo() {
+        let num = Math.random() * 3;   // genera un número entre 0 y 2.9999
+        num = parseInt(num);           // nos quedamos con la parte entera (0, 1 o 2)
+
+        if (num == 0) {
+            window.location = 'https://www.outlook.com';
+        } else if (num == 1) {
+            window.location = 'https://www.gmail.com';
+        } else {
+            window.location = 'https://www.yahoo.com';
+        }
+        }
+    </script>
+    
+</body>
+</html>
